@@ -5,10 +5,9 @@ Implemented distributed hash table (DHT) with an architecture like Chord (Scalab
 Compilation and execution: 
 
 1. To compile code: Extract all files and folders to a directory. 
-2. generate thrift code with "thrift --gen cpp chord.thrift". This should generate gen-cpp directory.  
+2. Install thrift and set paths accordingly. generate thrift code with "thrift --gen cpp chord.thrift". This should generate gen-cpp directory.  
 3. Run make command
 4. Once binary file has been created run servers with bash script as "bash server.sh <port#>"
-	(open multiple window for multiple servers or run in background)
 5. Open new window so server logs will be easily readable. 
 6. Create node.txt file make sure you have content matching with server instances, then Run ./init node.txt (node.txt contains all file server details in format of: file_server_ip file_server_port)
 7. Run your client to test servers on different ports.
