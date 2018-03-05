@@ -1,0 +1,3 @@
+# Chord-Distributed-Hash-Table
+
+Implemented distributed hash table (DHT) with an architecture like Chord (Scalable Peer-to-peer Lookup Service for Internet Applications) file system using C++ and Apache Thrift framework for communication between different entities. File system provides basic read and write operation with proper version maintenance. Different file servers are managed and tracked for load balancing using setFingertable, findSucc, findPred and getNodeSucc functions. Further, system refers to file with file id created with SHA-256 hash value of the string "<file_owner>:<file_name>” servers are referred by the SHA-256 hash value of the string "<server_ip_address>:<port_number>". 
